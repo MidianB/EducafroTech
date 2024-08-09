@@ -1,0 +1,12 @@
+
+function contagemRegressiva(maximo) {
+   
+    for (let i = maximo; i >= 0; i--) {
+       
+        console.log(i);
+    }
+}
+
+contagemRegressiva(5);  
+contagemRegressiva(3);  
+contagemRegressiva(10); 
