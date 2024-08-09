@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar Texto</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformar Texto</h1>
+    <form id="formulario">
+        <label for="texto">Digite um texto:</label>
+        <input type="text" id="texto">
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="resultado"></div>
+
+    <script>
+        function substituirPorProximaLetra(texto) {
+            return texto.split('').map(char => {
+         
+                const codigo = char.charCodeAt(0);
+
+                if (char >= 'a' && char <= 'z') {
+       
+                    return String.fromCharCode(codigo === 122 ? 97 : codigo + 1); // 'z' -> 'a'
+                } else if (char >= 'A' && char <= 'Z') {
+   
+                    return String.fromCharCode(codigo === 90 ? 65 : codigo + 1); // 'Z' -> 'A'
+                } else {
+               
+                    return char;
+                }
+            }).join('');
+        }
+
+
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+        
+            const texto = document.getElementById('texto').value;
+         
+            const resultado = substituirPorProximaLetra(texto);
+            document.getElementById('resultado').textContent = resultado;
+        });
+    </script>
+</body>
+</html>
