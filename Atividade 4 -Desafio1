@@ -1,0 +1,16 @@
+function verificaNota(nota1, nota2, nota3) {
+    // Calcula a média das três notas
+    const media = (nota1 + nota2 + nota3) / 3;
+    
+    // Verifica se a média é maior ou igual a 6
+    if (media >= 6) {
+        console.log("Passou de ano");
+    } else {
+        console.log("Recuperação");
+    }
+}
+
+// Exemplos de uso da função
+verificaNota(7, 9, 5); // Deve escrever "Passou de ano"
+verificaNota(1, 1, 4); // Deve escrever "Recuperação"
+verificaNota(6, 6, 6); // Deve escrever "Passou de ano"
