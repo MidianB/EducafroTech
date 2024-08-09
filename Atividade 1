@@ -1,0 +1,79 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita de Bolo de Chocolate</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #8b0000; /* Cor do título principal */
+            font-size: 36px; /* Tamanho da fonte */
+        }
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            font-size: 18px;
+            color: #333;
+        }
+
+        a {
+            color: #1e90ff; /* Cor do link */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            border: 5px solid #333; /* Borda na imagem */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Receita de Bolo de Chocolate</h1>
+    <h2>Uma sobremesa irresistível!</h2>
+
+    <p>Este bolo de chocolate é perfeito para qualquer ocasião. Ele é úmido, rico em sabor e muito fácil de fazer. Com esta receita simples, você vai surpreender seus convidados e se deliciar com cada pedaço.</p>
+
+    <p>Siga o passo a passo abaixo para preparar o melhor bolo de chocolate que você já experimentou. Não se esqueça de compartilhar com amigos e familiares!</p>
+
+    <h2>Ingredientes</h2>
+    <ul>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>2 xícaras de açúcar</li>
+        <li>1 xícara de cacau em pó</li>
+        <li>1 1/2 colheres de chá de fermento em pó</li>
+        <li>1 1/2 colheres de chá de bicarbonato de sódio</li>
+        <li>1 colher de chá de sal</li>
+        <li>2 ovos</li>
+        <li>1 xícara de leite</li>
+        <li>1/2 xícara de óleo vegetal</li>
+        <li>2 colheres de chá de extrato de baunilha</li>
+        <li>1 xícara de água fervente</li>
+    </ul>
+
+    <img src="https://example.com/imagem-bolo-chocolate.jpg" alt="Bolo de Chocolate">
+
+    <p>Para mais receitas deliciosas e dicas culinárias, visite o site da <a href="https://educafrotech.educafro.org.br/">EducaFroTech</a>.</p>
+</body>
+</html>
