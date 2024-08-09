@@ -1,0 +1,57 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Símbolos</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerar Símbolos</h1>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero" min="1">
+    <button onclick="gerarSimbolos()">Enviar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function gerarSimbolos() {
+          
+            const numero = document.getElementById('numero').value;
+            const resultadoDiv = document.getElementById('resultado');
+            
+            
+            if (numero < 1) {
+                resultadoDiv.textContent = 'Digite um número maior que 0.';
+                return;
+            }
+            
+          
+            let simbolos = '';
+            for (let i = 0; i < numero; i++) {
+                simbolos += '#';
+                if ((i + 1) % 2 === 0 && i < numero - 1) {
+                    simbolos += '-';
+                }
+            }
+            
+           
+            resultadoDiv.textContent = simbolos;
+        }
+    </script>
+</body>
+</html>
