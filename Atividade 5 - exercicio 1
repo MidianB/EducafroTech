@@ -1,0 +1,9 @@
+
+let valor1 = 10;  // Você pode alterar esse valor conforme necessário
+let valor2 = 20;  // Você pode alterar esse valor conforme necessário
+
+
+let resultado = valor1 + valor2;
+
+
+console.log("O resultado da soma é:", resultado);
