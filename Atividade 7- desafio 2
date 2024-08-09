@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformar Texto em Lista</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+        ul {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformar Texto em Lista</h1>
+    <label for="texto">Digite um texto:</label>
+    <input type="text" id="texto">
+    <button onclick="transformarEmLista()">Enviar</button>
+    <ul id="lista"></ul>
+
+    <script>
+        function transformarEmLista() {
+            
+            const texto = document.getElementById('texto').value;
+            const listaUl = document.getElementById('lista');
+            
+        
+            listaUl.innerHTML = '';
+            
+            
+            const palavras = texto.split(' ');
+            
+        
+            palavras.forEach(palavra => {
+                const li = document.createElement('li');
+                li.textContent = palavra;
+                listaUl.appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
