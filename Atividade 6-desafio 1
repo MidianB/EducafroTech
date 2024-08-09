@@ -1,0 +1,19 @@
+
+function encontrarNumeroMaisAlto(numeros) {
+
+    if (numeros.length === 0) {
+        console.log("O array está vazio.");
+        return;
+    }
+
+
+    const numeroMaisAlto = Math.max(...numeros);
+    
+ 
+    console.log("O número mais alto é:", numeroMaisAlto);
+}
+
+
+encontrarNumeroMaisAlto([5, 12, 3, 7, 9]); // Deve exibir "O número mais alto é: 12"
+encontrarNumeroMaisAlto([1, 2, 3, 4, 5]);  // Deve exibir "O número mais alto é: 5"
+encontrarNumeroMaisAlto([-10, -5, -3, -7]); // Deve exibir "O número mais alto é: -3"
