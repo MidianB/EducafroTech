@@ -1,0 +1,12 @@
+
+function verificarIdade(idade) {
+ 
+    if (idade > 18) {
+        console.log("Pode beber");
+    } else {
+        console.log("Não pode beber");
+    }
+}
+
+verificarIdade(20); 
+verificarIdade(15); 
