@@ -1,0 +1,29 @@
+
+const nomes = [
+    "Ana",
+    "Bruno",
+    "Carlos",
+    "Diana",
+    "Eduardo",
+    "Fernanda",
+    "Gabriel",
+    "Helena",
+    "Igor",
+    "Juliana"
+];
+
+function nomeNaPosicao(posicao) {
+   
+    if (posicao >= 0 && posicao < nomes.length) {
+       
+        console.log("O nome na posição", posicao, "é:", nomes[posicao]);
+    } else {
+        
+        console.log("Posição inválida. A posição deve estar entre 0 e", nomes.length - 1);
+    }
+}
+
+
+nomeNaPosicao(2);  
+nomeNaPosicao(5);  
+nomeNaPosicao(10); 
