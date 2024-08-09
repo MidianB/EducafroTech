@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Tamanho de Fonte</title>
+    <style>
+        #texto {
+            font-size: 16px; 
+        }
+    </style>
+    <script>
+        function aumentarFonte() {
+        
+            var texto = document.getElementById('texto');
+
+            var tamanhoAtual = window.getComputedStyle(texto).fontSize;
+         
+            var tamanhoNumero = parseFloat(tamanhoAtual);
+  
+            texto.style.fontSize = (tamanhoNumero + 2) + 'px';
+        }
+
+        function diminuirFonte() {
+  
+            var texto = document.getElementById('texto');
+
+            var tamanhoAtual = window.getComputedStyle(texto).fontSize;
+   
+            var tamanhoNumero = parseFloat(tamanhoAtual);
+          
+            texto.style.fontSize = (tamanhoNumero - 2) + 'px';
+        }
+    </script>
+</head>
+<body>
+    <h1>Controle de Tamanho de Fonte</h1>
+    <button onclick="aumentarFonte()">+</button>
+    <button onclick="diminuirFonte()">-</button>
+    <p id="texto">Este é um texto que pode ter seu tamanho ajustado.</p>
+</body>
+</html>
